@@ -18,7 +18,6 @@ class TestUnicorn(unittest.TestCase):
     def testlogIn(self):
         driver = self.driver
         driver.get("http://unicornitems.com/my-account/")
-        #WebDriverWait(driver,4).until(expected_conditions.visibility_of_element_located(By.NAME,"username"))
         element_username = driver.find_element(By.NAME,"username")
         element_password = driver.find_element(By.NAME,"password")
 
